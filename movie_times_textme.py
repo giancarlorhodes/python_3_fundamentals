@@ -1,3 +1,6 @@
+
+
+# Python 3 Fundamentals, by Sarah Holderness, Pluralsight, 2h 55min 
 # TODO - build a tomatoes rating API - basically, is the movies good or not
 
 # dictionary in Python

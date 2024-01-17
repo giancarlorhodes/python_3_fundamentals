@@ -1,3 +1,6 @@
+
+# Python 3 Fundamentals, by Sarah Holderness, Pluralsight, 2h 55min 
+
 import random
 
 def rand_convert():
