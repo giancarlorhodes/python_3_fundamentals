@@ -1,3 +1,5 @@
+# Python 3 Fundamentals, by Sarah Holderness, Pluralsight, 2h 55min
+
 class TimeAndDay:
 
     date = str("01/15/2024")    # mm/dd/yyyy
