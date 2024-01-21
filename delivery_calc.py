@@ -41,7 +41,11 @@ print("standard reimbursement includes costs for: gas, oil, tires, "
 "maintenance and repairs, as well as the fixed costs of operating the "
 "vehicle, such as insurance, registration and depreciation or lease payments.")
 
-_reimbursement_cents_per_mile = input("Enter cents per mile reimbursement rate ##: ")
+_reimbursement_cents_per_mile = int(input("Enter cents per mile reimbursement rate ##: "))
 _debit = delivery_calc_lib._debit_calc_func(_money, _mrConvert,
                                             _reimbursement_cents_per_mile)
-print("Credit: ", _money, ", Debit: ", _debit)
+print("Credit: $", _money, ", Debit: $", _debit)
+_diff: float = round(float(_money) - _debit,2)
+print("You made $",_diff,"in ", _hours, " hours.")
+_dollar_per_hour = _diff / float(_hours)
+print("You'll be taxed on the $",_diff,". You made $",_dollar_per_hour, "per hour.")
