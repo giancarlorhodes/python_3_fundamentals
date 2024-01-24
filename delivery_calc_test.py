@@ -1,4 +1,10 @@
 # this is for calculating how much money are you actually making
+#*********************************************************************
+# Author: Giancarlo Rhodes
+# Description: Getting to accurate taxable amount. Unit testing
+#*********************************************************************
+
+
 import unittest
 import delivery_calc_lib
 
@@ -37,6 +43,9 @@ class TestDeliveryCalcLib(unittest.TestCase):
         self.assertEqual(_expected, _actual)
         print("It cost $",_actual,"to drive 50 miles.")
 
+    def test_drove100miles(self):
+        _ratio = delivery_calc_lib._mileage_ratio_str_to_float("10/6") # .67
+        print ("My dollars to miles ratio is: ", _ratio)
     
 
 if __name__ == '__main__':

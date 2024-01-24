@@ -1,3 +1,8 @@
+# this is for calculating how much money are you actually making
+#*********************************************************************
+# Author: Giancarlo Rhodes
+# Description: Libraray Reference. Getting to accurate taxable amount
+#*********************************************************************
 
 def _mileage_ratio_str_to_float(inMileageRatio: str):
     _numbers = inMileageRatio.rsplit('/')
@@ -6,8 +11,10 @@ def _mileage_ratio_str_to_float(inMileageRatio: str):
     _rounded: float = round(_numerator/_denominator, 2)
     return _rounded
 
+
 def _debit_calc_func(inDollarsEarned: int, inMileageRatio: float, 
-                     inReimbursementCentsPerMile: int):
+    inReimbursementCentsPerMile: int):
+
     #_value: float = round(float(inDollarsEarned),2)
     #print("Dollars: ", _value)
     _miles_estimate: float = int(inDollarsEarned) / inMileageRatio

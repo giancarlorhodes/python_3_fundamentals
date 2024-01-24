@@ -1,16 +1,10 @@
 # this is for calculating how much money are you actually making
+#*********************************************************************
+# Author: Giancarlo Rhodes
+# Description: Getting to accurate taxable amount
+#*********************************************************************
 
-# def _mileage_ratio_str_to_float(inStrMileageRatio):
-#     _numbers = inStrMileageRatio.rsplit('/')
-#     print(_numbers[0])
-#     print(_numbers[1])
-#     return 5/3  #int(_numbers[0]) / int(_numbers[1])
 
-# def _debit_calc_func(inDollarsEarned):
-#     _value = float(inDollarsEarned)
-#     _miles_estimate = int(_money) * _mileage_ratio_str_to_float(_mileage_ratio)
-#     _miles_cost = int(_mileage_reimbursement) * _miles_estimate
-#     return _value - _miles_cost
 import delivery_calc_lib
 
 print("Welcome my delivery friend\n")
