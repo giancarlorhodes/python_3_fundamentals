@@ -44,6 +44,7 @@ class Customer(Person):
         super().__init__(inName)
 
 
+
 class Police(Person):
 
      def __init__(self, inName):
