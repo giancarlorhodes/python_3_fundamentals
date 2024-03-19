@@ -23,5 +23,17 @@ button.pack()
 greeting_label = tk.Label(window, text="")
 greeting_label.pack()
 
+# Get the screen width and height
+screen_width = window.winfo_screenwidth()
+screen_height = window.winfo_screenheight()
+
+# Calculate the new width and height for the window (25% of the screen)
+new_width = int(screen_width * 0.25)
+new_height = int(screen_height * 0.25)
+
+# Set the window size and position it in the center of the screen
+window.geometry(f"{new_width}x{new_height}+{int((screen_width - new_width) / 2)}+{int((screen_height - new_height) / 2)}")
+
+
 # Start the main loop
 window.mainloop()
