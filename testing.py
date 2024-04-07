@@ -35,9 +35,8 @@ class Worker(Person):
     def __init__(self, inName):
         super().__init__(inName)
         #self.name = inName
-
     
-
+    
 class Customer(Person):
 
      def __init__(self, inName):
